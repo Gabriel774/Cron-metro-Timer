@@ -1,0 +1,80 @@
+@font-face {
+    font-family: numFont;
+    src: url('../public/fonts/LiquidCrystal-Normal.otf');
+}
+
+@font-face {
+    font-family: digital;
+    src: url('../public/fonts/digital-7.ttf');
+}
+
+#Cronometer {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Cronometer .time {
+    font-family: numFont;
+    font-size: 36pt;
+    letter-spacing: 2px;
+    color: rgb(98, 177, 255);
+}
+
+#Cronometer .point {
+    font-family: digital;
+}
+
+#Cronometer #laps {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow-y: scroll;
+    margin: 25px 0px;
+    padding: 0px 25px;
+}
+
+#Cronometer .lap {
+    font-size: 15pt;
+    animation: txt-appear .5s;
+    transition: all .5s;
+}
+
+#Cronometer .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.appear {
+    animation: appear .5s;
+    transition: all .5s;
+}
+
+.disappear {
+    animation: dissapear .5s;
+    transition: all .5s;
+}
+
+@keyframes appear {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+@keyframes dissapear {
+    to {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+@keyframes txt-appear {
+    from {
+        transform: translateX(-25px);
+        opacity: 0;
+    }
+}

@@ -1,0 +1,26 @@
+.timeAdd {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.addContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 25px;
+}
+
+.inp {
+    color: white;
+    width: 95px;
+    font-size: 15pt;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(98, 177, 255);
+    -webkit-appearance: none;
+}

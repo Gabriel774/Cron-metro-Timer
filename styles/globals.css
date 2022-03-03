@@ -14,3 +14,158 @@ a {
 * {
   box-sizing: border-box;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  border: solid 1px;
+  outline: none;
+  font-size: 16pt;
+  padding: 7px;
+  background: transparent;
+  transition: all .2s;
+  margin: 10px 20px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.primary {
+  color: #01BAEF;
+  border-color: #01BAEF;
+}
+
+.primary:hover {
+  background-color: #01BAEF;
+  color: rgb(37, 37, 37);
+}
+
+.primary:active {
+  background-color: #0099c4;
+  border-color: #0099c4;
+}
+
+.danger {
+  border-color: tomato;
+  color: tomato;
+}
+
+.danger:hover {
+  background-color: tomato;
+  color: rgb(37, 37, 37);
+}
+
+.danger:active {
+  background-color: rgb(194, 72, 50);
+  border-color: rgb(194, 72, 50);
+}
+
+.warning {
+  color: #FFC914;
+  border-color: #FFC914;
+}
+
+.warning:hover {
+  background-color: #FFC914;
+  color: rgb(37, 37, 37);
+}
+
+.warning:active {
+  background-color: #d1a40f;
+  border-color: #d1a40f;
+}
+
+.success {
+  color: #94DD4F;
+  border-color: #94DD4F;
+}
+
+.success:hover {
+  background-color: #94DD4F;
+  color: rgb(37, 37, 37);
+}
+
+.success:active {
+  background-color: #7dbd42;
+  border-color: #7dbd42;
+}
+
+.rounded-left {
+  margin: 10px 0px;
+  border-radius: 10px 0px 0px 10px;
+  width: 150px;
+  border-right: none;
+}
+
+.rounded-right {
+  margin: 10px 0px;
+  border-radius: 0px 10px 10px 0px;
+  width: 150px;
+}
+
+.active {
+  background-color: #01BAEF;
+  color: rgb(37, 37, 37);
+}
+
+.plus {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  padding: 0;
+  color: rgb(98, 177, 255);
+  border-color: rgb(98, 177, 255);
+}
+
+.plus:hover {
+  background-color: rgb(98, 177, 255);
+  color: rgb(31, 31, 31);
+}
+
+.plus:active {
+  background-color: rgb(84, 152, 219);
+}
+
+.btn[disabled] {
+  color: grey;
+  border-color: grey;
+  cursor: not-allowed;
+}
+
+.btn[disabled]:hover {
+  background-color: transparent;
+}
+
+@media (max-width: 355px) {
+  .rounded-left {
+    width: 49%;
+  }
+
+  .rounded-right {
+    width: 49%;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+
+::-webkit-scrollbar:hover {
+  background-image: rgba(0, 0, 0, 0.445);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(117, 117, 117, 0.712);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(105, 105, 105, 0.863);
+}
+
+::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:hover:active {
+  background-color: rgb(78, 78, 78);
+}
