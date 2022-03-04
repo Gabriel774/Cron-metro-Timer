@@ -77,7 +77,7 @@ export default function Cronometer(props) {
                     {running ? 'Parar' : 'Iniciar'}
                 </button>
 
-                <button className='btn success' onClick={() => lap()}>Volta</button>
+                <button disabled={!running} className={`btn success ${!running && 'disabled'}`} onClick={() => lap()}>Volta</button>
 
                 <button className='btn warning' onClick={() => reset()}>Reiniciar</button>
             </div>
